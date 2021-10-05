@@ -16,4 +16,8 @@ conda create --prefix ./envs python=3.7 -y
 ```bash
 conda activate ./envs 
 ```
+## Code 
+``` bash
+git add . && git commit -m "Updated Readme" && git push origin main 
+```
 
