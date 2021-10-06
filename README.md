@@ -21,3 +21,7 @@ conda activate ./envs
 git add . && git commit -m "Updated Readme" && git push origin main 
 ```
 
+## Reference
+
+*[conda env commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) 
+
