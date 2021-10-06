@@ -1,6 +1,6 @@
-from utils.model import create_model
 from src.utils.common import read_config
 from src.utils.data_mgmt import get_data
+from src.utils.model import create_model
 import argparse
 
 def training(config_path):
