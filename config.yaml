@@ -1,5 +1,5 @@
 params:
-  epochs: 5
+  epochs: 2
   batch_size: 32
   num_classes: 10
   loss_function: sparse_categorical_crossentropy
@@ -18,3 +18,4 @@ logs:
   logs_dir: logs_dir
   general_logs: general_logs
   tensorboard_logs: tensorboard_logs
+  
