@@ -1,6 +1,8 @@
+import pandas as pd
 from src.utils.common import read_config
 from src.utils.data_mgmt import get_data
 from src.utils.model import create_model, save_model
+from src.utils.Save_plot import save_plot
 import os
 import argparse
 
@@ -34,6 +36,10 @@ def training(config_path):
 
     save_model(model, model_name, model_dir_path)
 
+    plots_dir = config['artifacts']["artifacts_dir"]
+    plots_name = config['artifacts']["plots_dir"]
+
+    save_plot(pd.DataFrame(history.history),plots_name, plots_dir)
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
