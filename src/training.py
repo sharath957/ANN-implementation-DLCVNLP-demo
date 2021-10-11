@@ -31,6 +31,7 @@ def training(config_path):
     os.makedirs(model_dir_path, exist_ok=True)
 
     model_name = config['artifacts']["model_name"]
+
     save_model(model, model_name, model_dir_path)
 
 
