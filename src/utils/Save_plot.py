@@ -1,7 +1,5 @@
 import os
 import matplotlib.pyplot as plt
-
-
 def save_plot(df, plots_name,plots_dir):
     df.plot(figsize=(8, 5))
     plt.grid(True)

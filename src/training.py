@@ -3,6 +3,9 @@ from src.utils.common import read_config
 from src.utils.data_mgmt import get_data
 from src.utils.model import create_model, save_model
 from src.utils.Save_plot import save_plot
+#from src.utils.log import get_log_path
+#import tensorflow as tf
+#import numpy as np
 import os
 import argparse
 
@@ -35,7 +38,7 @@ def training(config_path):
     model_name = config['artifacts']["model_name"]
 
     save_model(model, model_name, model_dir_path)
-
+    ## Plot saving
     plots_dir = config['artifacts']["artifacts_dir"]
     plots_name = config['artifacts']["plots_dir"]
 
@@ -49,3 +52,4 @@ if __name__ == '__main__':
     parsed_args = args.parse_args()
 
     training(config_path=parsed_args.config)
+
