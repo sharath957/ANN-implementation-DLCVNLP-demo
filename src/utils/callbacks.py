@@ -36,3 +36,4 @@ def get_callbacks(config, X_train):
     checkpointing_cb = tf.keras.callbacks.ModelCheckpoint(CKPT_path, save_best_only=True)
      
     return [tensorboard_cb, early_stopping_cb, checkpointing_cb ]
+     
